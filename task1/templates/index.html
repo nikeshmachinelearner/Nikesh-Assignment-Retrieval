@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nikesh Adhikari — EFA Vertical Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand">Nikesh Adhikari — Coventry Vertical Search</div>
+        <nav>
+          <a href="https://pureportal.coventry.ac.uk/en/organisations/fbl-school-of-economics-finance-and-accounting/publications/" target="_blank">PurePortal</a>
+          <a href="#" id="statsLink">Stats</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Search University Research Outputs</h1>
+        <p class="muted">
+          Query by <strong>title</strong>, <strong>authors</strong>, or <strong>type</strong> (e.g. “journal article”). Ranked by BM25F. Use the sort menu for recency or year.
+        </p>
+        <div class="searchbar">
+          <input id="q" type="text" placeholder="e.g. monetary policy, health economics, machine learning" />
+          <select id="sort">
+            <option value="relevance" selected>Sort: Relevance</option>
+            <option value="recent">Sort: Recently Crawled</option>
+            <option value="year">Sort: Year (desc)</option>
+          </select>
+          <button id="go">Search</button>
+        </div>
+      </section>
+
+      <section id="notice" class="notice">
+        Tip: for the first time, run <code>python crawler.py</code> then <code>python indexer.py</code>.
+      </section>
+
+      <section id="results" class="results"></section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>Academic project for Information Retrieval — Nikesh Adhikari</p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>

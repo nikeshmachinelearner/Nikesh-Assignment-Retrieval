@@ -1,0 +1,18 @@
+seed_urls:
+  - "https://pureportal.coventry.ac.uk/en/organisations/fbl-school-of-economics-finance-and-accounting/publications/"
+allowed_domains:
+  - "pureportal.coventry.ac.uk"
+crawl:
+  max_pages: 4000
+  follow_patterns:
+    - "/en/publications/"
+    - "/en/persons/"
+politeness:
+  min_delay_sec: 2
+  max_delay_sec: 4
+  timeout_sec: 20
+  user_agent: "CU-EFA-Vertical-Search/1.0 (+project; respectful crawler)"
+paths:
+  data_jsonl: "data/publications.jsonl"
+  index_dir: "models/index"
+  logs_dir: "models/logs"

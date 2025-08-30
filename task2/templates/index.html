@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nikesh Adhikari — Subject Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand">Nikesh Adhikari, Task 2 Subject Classifier</div>
+        <nav>
+          <a href="#" id="metricsLink">Metrics</a>
+          <a href="https://scikit-learn.org/stable/modules/naive_bayes.html" target="_blank">Naïve Bayes</a>
+          <a href="https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression" target="_blank">Logistic Regression</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Politics • Business • Health</h1>
+        <p class="muted">Paste a paragraph, choose a model, and get the predicted class with probabilities and top indicative terms.</p>
+        <div class="searchbar">
+          <textarea id="text" placeholder="Write text or paragraph here..."></textarea>
+          <div class="actions">
+            <select id="model">
+              <option value="auto">Auto (best)</option>
+              <option value="nb">Naïve Bayes</option>
+              <option value="lr">Logistic Regression</option>
+            </select>
+            <button id="predictBtn">Classify</button>
+          </div>
+        </div>
+      </section>
+      {% if not ready %}
+        <section class="notice">
+          Models not trained yet. Run <code>python train.py</code> first.
+        </section>
+      {% endif %}
+      <section id="result" class="card" style="display:none;"></section>
+      
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        <p>Sources from BBC, CNN and CTV websites</p>
+      </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>

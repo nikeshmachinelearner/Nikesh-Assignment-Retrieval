@@ -1,0 +1,92 @@
+{
+  "cv": {
+    "nb": {
+      "accuracy_mean": 0.9666666666666668,
+      "accuracy_std": 0.0485912657903775
+    },
+    "lr": {
+      "accuracy_mean": 0.9666666666666668,
+      "accuracy_std": 0.031180478223116186
+    }
+  },
+  "heldout": {
+    "nb": {
+      "accuracy": 1.0,
+      "report": {
+        "Business": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Health": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Politics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        }
+      }
+    },
+    "lr": {
+      "accuracy": 1.0,
+      "report": {
+        "Business": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Health": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "Politics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        }
+      }
+    },
+    "best_model": "lr"
+  },
+  "counts": {
+    "Politics": 40,
+    "Business": 40,
+    "Health": 40
+  }
+}

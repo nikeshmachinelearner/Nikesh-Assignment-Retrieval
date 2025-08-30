@@ -1,0 +1,92 @@
+{
+  "cv": {
+    "nb": {
+      "accuracy_mean": 0.8,
+      "accuracy_std": 0.0311804782231162
+    },
+    "lr": {
+      "accuracy_mean": 0.825,
+      "accuracy_std": 0.048591265790377515
+    }
+  },
+  "heldout": {
+    "nb": {
+      "accuracy": 0.7916666666666666,
+      "report": {
+        "Business": {
+          "precision": 0.6666666666666666,
+          "recall": 0.75,
+          "f1-score": 0.7058823529411765,
+          "support": 8.0
+        },
+        "Health": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1-score": 0.9333333333333333,
+          "support": 8.0
+        },
+        "Politics": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 8.0
+        },
+        "accuracy": 0.7916666666666666,
+        "macro avg": {
+          "precision": 0.8055555555555555,
+          "recall": 0.7916666666666666,
+          "f1-score": 0.7964052287581699,
+          "support": 24.0
+        },
+        "weighted avg": {
+          "precision": 0.8055555555555555,
+          "recall": 0.7916666666666666,
+          "f1-score": 0.7964052287581699,
+          "support": 24.0
+        }
+      }
+    },
+    "lr": {
+      "accuracy": 0.7916666666666666,
+      "report": {
+        "Business": {
+          "precision": 0.6666666666666666,
+          "recall": 0.75,
+          "f1-score": 0.7058823529411765,
+          "support": 8.0
+        },
+        "Health": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 8.0
+        },
+        "Politics": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1-score": 0.8,
+          "support": 8.0
+        },
+        "accuracy": 0.7916666666666666,
+        "macro avg": {
+          "precision": 0.7996031746031745,
+          "recall": 0.7916666666666666,
+          "f1-score": 0.7936274509803921,
+          "support": 24.0
+        },
+        "weighted avg": {
+          "precision": 0.7996031746031745,
+          "recall": 0.7916666666666666,
+          "f1-score": 0.7936274509803921,
+          "support": 24.0
+        }
+      }
+    },
+    "best_model": "lr"
+  },
+  "counts": {
+    "Politics": 40,
+    "Business": 40,
+    "Health": 40
+  }
+}
